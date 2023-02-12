@@ -1,0 +1,319 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 11-Feb-2023, 11:04:42 PM
+    Author     : shrivesh
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(black,blueviolet);
+    background-repeat: no-repeat, no-repeat; 
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 20%;;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+  
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin: 5px;
+    border-radius: 60px;
+}
+
+nav ul li a:hover{
+    background: #49cadf;
+}
+
+section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.about{
+	background-color:#464242;
+}
+.intro{
+    position: absolute;
+    width: 50%;
+    height: 74%;
+    overflow: hidden;
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    margin-left: 20%;
+    margin-top: 15%;
+}
+.greet{
+    display: block;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: White;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.text h1{
+    display: block;
+    font-size: 5em;
+    font-weight: 900;
+    color: white;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px;
+}
+
+.text h1:hover{
+    color: #49cadf;
+    transform:scaleY(1.2);
+    transition: all 1000ms ease-in-out; 
+}
+.about button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 8px 4px;
+    margin: 10px 5px;
+    text-transform: capitalize;
+    box-shadow: -5px 8px 4px #49cadf;
+}
+.about button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.profile{
+    position: absolute;
+    width: 30%;
+    height:60%;
+    margin-top: 10%;
+    overflow: hidden;
+    right:160px;
+    border: 2px solid white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile:hover{
+    transform: rotate(180deg);
+    background: red;
+    transition: all 1000ms ease-in-out;
+}
+.profile .s2{
+    position: absolute;
+    background: black;
+    width: 20%;
+    height:50%;
+    margin-top: 11%;
+    overflow: hidden;
+    right:170px;
+    border: 2px solid white;  
+}
+
+.profile .s1{
+    position: absolute;
+    background: white;
+    width: 60%;
+    height:30%;
+    margin-top: 12%;
+    overflow: hidden;
+    right:170px;
+    border: 2px solid white;  
+}
+
+.skills h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
+}
+
+.skills .college,.languses{
+    border: 2px solid white;
+    margin: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
+}
+
+.skills h1{
+    padding: 5px;
+}
+
+.skills p{
+    padding: 5px;
+}
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background-color: #666;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right {
+    right: 0;
+    background-color: #666;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right:hover,
+.split.left:hover
+{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+.split.right,
+.split.left
+{
+  transition: all 1000ms ease-in-out;
+}
+.hover-left .right {
+  width: 20%;
+}
+.hover-right .left {
+  width: 20%;
+}
+
+.projects{
+    background-color:#8a8c89;
+    height: 60vh;
+}
+
+.projects h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 15px;
+    margin-left: 10%;
+    padding: 15px;
+}
+
+.projects .project{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.projects .project-1,.project-2{
+    width: 80vh;
+    height: 30vh;
+    border: 2px solid #01020d;
+    margin: 15px;
+    padding: 15px;
+}
+
+.project-1:hover,.project-2:hover{
+    background: grey;
+}
+.contact{
+    background-color:#01020d;
+}
+
+.contact button{
+    cursor: pointer;
+    display: inline-block;
+    width: 20%;
+    background: rgba(255,255,255,0.3);
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+
+}
+
+.contact button:hover{
+    background: black;
+}
+
+.form-control{
+    display: grid;
+    background: rgba(255,255,255,0.2);
+    height: 60%;
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px 20px;
+    color: white;
+    justify-content: center;
+}
+
+.form-control input,textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control h1{
+    margin: 10px;
+}
+
+.form-control .cnt_p1{
+    margin: 10px;
+}
+
+.form-control .cnt_p2{
+    margin: 10px;
+}
