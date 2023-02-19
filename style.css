@@ -1,50 +1,35 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
-/* 
-    Created on : 11-Feb-2023, 11:04:42 PM
-    Author     : shrivesh
-*/
-
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+:root{
+    --neon:rgb(62, 174, 173);
+}
 
-body{
-    background: purple;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
-    min-height:100vh;
-    background: linear-gradient(black,blueviolet);
-    background-repeat: no-repeat, no-repeat; 
+html{
+    
+}
+
+section{
+    height: 100vh;
+    background-color: var(--neon);
 }
 
 nav{
     display: flex;
-    position: absolute;
-    margin: auto;
-    width: 100%;
-    height: 20%;;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logo{
-    width: 10%;
-    height: 100%;
-    margin-left: 10%;
+    height: 130px;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin-right: 30px;
-  
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 nav ul li a{
@@ -57,46 +42,37 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: #49cadf;
+    background: var(--neon);
+    color: white;
 }
 
-section{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+
+.home{
     height: 100vh;
+    background: url(back.png), radial-gradient(rgb(17, 14, 104),black);
+    color: white;
+    background-repeat: no-repeat; 
+    background-position: top;
+    opacity: 100%;
 }
 
-.about{
-	background-color:#464242;
-}
-.intro{
+.home-text{
     position: absolute;
-    width: 50%;
-    height: 74%;
+    width: 100%;
     overflow: hidden;
-    margin-top: 80px;
+    bottom: 10px;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.text{
-    margin-left: 20%;
-    margin-top: 15%;
-}
-.greet{
+.home-text h1{
     display: block;
-    position: relative;
-    font-size: 30px;
-    letter-spacing: 3px;
-    color: White;
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.text h1{
-    display: block;
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: 900;
     color: white;
     text-transform: capitalize;
@@ -104,168 +80,108 @@ section{
     padding: 10px;
 }
 
-.text h1:hover{
+.home-text h1:hover{
     color: #49cadf;
     transform:scaleY(1.2);
     transition: all 1000ms ease-in-out; 
 }
-.about button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 400;
+
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(17, 14, 104);
     color: white;
-    background-color: black;
-    padding: 8px 4px;
-    margin: 10px 5px;
-    text-transform: capitalize;
-    box-shadow: -5px 8px 4px #49cadf;
-}
-.about button:hover{
-    background-color: whitesmoke;
-    color: black;
+    padding: 80px;
 }
 
-.profile{
-    position: absolute;
-    width: 30%;
-    height:60%;
-    margin-top: 10%;
-    overflow: hidden;
-    right:160px;
-    border: 2px solid white;
-    background-repeat: no-repeat;
-    background-size: cover;
+h2{
+    font-size: 50px;
 }
 
-.profile:hover{
-    transform: rotate(180deg);
-    background: red;
-    transition: all 1000ms ease-in-out;
-}
-.profile .s2{
-    position: absolute;
-    background: black;
-    width: 20%;
-    height:50%;
-    margin-top: 11%;
-    overflow: hidden;
-    right:170px;
-    border: 2px solid white;  
+.headshot{
+    width: 300px;
+    border: 3px dashed;
+    box-shadow:25px 25px 30px lightseagreen;
 }
 
-.profile .s1{
-    position: absolute;
-    background: white;
-    width: 60%;
-    height:30%;
-    margin-top: 12%;
-    overflow: hidden;
-    right:170px;
-    border: 2px solid white;  
-}
-
-.skills h2 {
-    font-size: 30px;
-    color: #fff;
-    margin: 15px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 15px;
-}
-
-.skills .college,.languses{
-    border: 2px solid white;
-    margin: 15px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 15px;
-}
-
-.skills h1{
-    padding: 5px;
-}
-
-.skills p{
-    padding: 5px;
-}
-.split {
-    position: absolute;
+.about .information{
     width: 50%;
-    height: 100%;
-    overflow: hidden;
 }
 
-.split.left {
-    left: 0;
-    background-color: #666;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about p{
+    margin-top: 30px;
 }
-.split.right {
-    right: 0;
-    background-color: #666;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about .skills{
+    width: 50%;
 }
 
-.split.right:hover,
-.split.left:hover
-{
-    content: '';
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    background-color: darkgray;
-}
 
-.split.right,
-.split.left
-{
-  transition: all 1000ms ease-in-out;
-}
-.hover-left .right {
-  width: 20%;
-}
-.hover-right .left {
-  width: 20%;
-}
 
 .projects{
-    background-color:#8a8c89;
-    height: 60vh;
-}
-
-.projects h2 {
-    font-size: 30px;
-    color: #fff;
-    margin: 15px;
-    margin-left: 10%;
-    padding: 15px;
-}
-
-.projects .project{
     display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.projects .project-1,.project-2{
-    width: 80vh;
-    height: 30vh;
-    border: 2px solid #01020d;
-    margin: 15px;
-    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(17, 14, 104);
+    color: white;
 }
 
-.project-1:hover,.project-2:hover{
-    background: grey;
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.project-card{
+    width: 200px;
+    height: 300px;
+    box-shadow: 5px  5px 20px black;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-image{
+    margin-top: 25px;
+    border-radius: 125px;
+}
+.project-link{
+    text-decoration: none;
+    color: white;
+}
+
+.qualifications{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #01020d;
+    color: white;
+}
+
+.college{
+    margin: 20px;
+    padding: 10px;
+    
+}
+.college-1{
+    margin: 30px;
+    border: 2px solid whitesmoke;
+}
+
+.college-1:hover{
+    
+    transition: 1sec;
 }
 .contact{
+    height: 85vh;
     background-color:#01020d;
 }
 
+.contact form{
+    padding: 5%;
+}
 .contact button{
     cursor: pointer;
     display: inline-block;
@@ -286,10 +202,10 @@ section{
 
 .form-control{
     display: grid;
-    background: rgba(255,255,255,0.2);
+    background: rgba(0,254,255,0.2);
     height: 60%;
-    width: 50%;
-    margin: 40px auto;
+    width: 60%;
+    margin: auto;
     padding: 30px 20px;
     color: white;
     justify-content: center;
@@ -316,4 +232,30 @@ section{
 
 .form-control .cnt_p2{
     margin: 10px;
+}
+
+footer{
+    position: relative;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin: 5px;
+    border-radius: 60px;
 }

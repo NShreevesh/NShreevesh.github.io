@@ -5,72 +5,108 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>Portfolio website</title>
+        <title>Shreevesh Naik</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="header">
+        <section class="home">
             <nav>
-                <img src="logo.png" alt="logo" class="logo"/>
+                <img class="logo" src="logo.png" alt="logo"/>
                 <div class="menu">
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#qualifications">Qualifications</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-        </div>
-        <section class="about" id="about">
-            <div class="intro">
-                <div class="text">
-                    <span class="greet">Hey, I am </span>
-                    <h1>Shreevesh Naik</h1>
-                    <button type="button">Contact me</button>
-                </div>
-            </div>    
-            <div class="profile">
-                <div class="s1">
-                    <div class="s2">
-                        
-                    </div>
-                </div>
+            <div class="home-text">
+                <h1>~~Shreevesh Naik~~</h1>
+                <p>Student</p>
             </div>
         </section>
-        <section class="skills" id="skills">
-             <div class="split left">
-                <h2>Qualifications</h2>
-                <div class="college">
+        
+        <!-- about section -->
+        <section class ="about" id="about">
+
+                <div class="information">
+                    <h2>About me</h2>
+                    <p>Hello,My name is Shreevesh Naik. I am studying Masters in Computer application at Goa University</p>
+                </div>
+                <div class="headshot-container">
+                    <img class="headshot" src="headshot.jpg" alt="profile"/>
+                </div>
+
+              
+        </section>
+        
+        <!-- qualifications section -->
+        <section class ="qualifications" id="qualifications">
+            <h2>Qualifications</h2>
+            <div class="college">
+                <div class="college-1">
+                    <h1>Post Graduation in</h1>
+                    <h1>Goa University</h1><hr>
+                    <p>Current</p>
+                </div>
+                <div class="college-1">
+                    <h1>Graduated from</h1>
                     <h1>DCT's Dhempe College of Arts And Science, Miramar</h1><hr>
-                    <p>CGPA:9</p>
+                    <p>Year:2019-2022</p>
                 </div>
-            </div>
-            <div class="split right">
-                <h2>Skills</h2>
-                <div class="languses">
-                    <h1>Languages know</h1><hr>
-                    <p>Html | CSS | C | Java</p>
+                <div class="college-1">
+                    <h1>Higher Secondary School (12th) from</h1>
+                    <h1>Government Higher Secondary School Khandola</h1><hr>
+                    <p>Year:2017-2019</p>
+                </div>
+                <div class="college-1">
+                    <h1>Secondary School (10th) from</h1>
+                    <h1>Shri Sharda Vidyalaya Govt. High School Kumbharjua</h1><hr>
+                    <p>Year:2012-2017</p>
                 </div>
             </div>
         </section>
-        
-        <section class="projects" id="projects">
+                
+        <!-- projects section -->
+        <section class ="projects" id="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <div class="project-1">
-                    <span>Project 1</span>
+            <div class="project-container">
+                <div class="project-card">
+                    <img class="project-image" src="src" alt="Project 1 Image"/>
+                    <h3>Project 1</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="githublink">View here</a></p>
                 </div>
-                <div class="project-2">
-                    <span>Project 2</span>
+                <div class="project-card">
+                    <img class="project-image" src="src" alt="Project 1 Image"/>
+                    <h3>Project 1</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="githublink">View here</a></p>
                 </div>
-            </div>    
+                <div class="project-card">
+                    <img class="project-image" src="src" alt="Project 1 Image"/>
+                    <h3>Project 1</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="githublink">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src" alt="Project 1 Image"/>
+                    <h3>Project 1</h3>
+                    <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="githublink">View here</a></p>
+                </div>
+            </div>
         </section>
-        
-        <section class="contact" id="contact">
-            
+                        
+        <!-- contact section -->
+        <section class="contact" id="contact"> 
             <form>
                <div class="form-control">
                    <h1>Contact</h1>
@@ -84,10 +120,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     
                    <textarea id="message" name="message" placeholder="Message" required></textarea>
 
-                    <button type="submit">>></button>
-                    
+                    <button type="submit">>></button>  
                </div>
             </form>
         </section>
+        
+        <footer>
+            <span>Socials</span>
+            <ul>
+                <li><a href="#about">Linked In</a></li>
+                <li><a href="#qualifications">GIt HUb</a></li>
+                <li><a href="#projects">Twitter</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
